@@ -1,0 +1,42 @@
+# Git configuration for release repository
+# Only include APKs, docs, and images
+
+# Exclude build artifacts from main project
+**/.vs/
+**/.vscode/
+**/bin/
+**/obj/
+**/*.suo
+**/*.user
+**/*.userosscache
+**/*.sln.docstates
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.log
+
+# Don't exclude our APK releases!
+!releases/*.apk
+!releases/*.json
+
+# Keep documentation and images
+!*.md
+!*.txt
+!screenshots/*.png
+!screenshots/*.jpg
+!screenshots/*.jpeg
+
+# Keep scripts
+!*.sh
+
+# Keep license
+!LICENSE

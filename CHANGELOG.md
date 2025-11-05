@@ -1,0 +1,49 @@
+# Changelog
+
+All notable changes to Switch Toolkit for Android will be documented here.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Planned Features
+- Cloud backup integration
+- Game metadata auto-download
+- Custom theme support
+- Export library to CSV/JSON
+- Advanced search filters
+
+---
+
+<!-- Releases will be added here by update-release.sh -->
+
+## Release Template
+
+```markdown
+## [X.Y.Z] - YYYY-MM-DD
+
+### Added
+- New features
+
+### Changed
+- Changes to existing features
+
+### Deprecated
+- Features that will be removed soon
+
+### Removed
+- Removed features
+
+### Fixed
+- Bug fixes
+
+### Security
+- Security improvements
+
+**Download**: [SwitchToolkit-vX.Y.Z.apk](releases/SwitchToolkit-vX.Y.Z.apk)
+
+**SHA256**: `hash_here`
+
+---
+```
