@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.1] - 2025-11-05
+
+Release version 2.0.1
+
+**Download**: [SwitchToolkit-v2.0.1.apk](releases/SwitchToolkit-v2.0.1.apk)
+
+**SHA256**: `b8f3f8e248626f443562d41f3b393294023168d33f3699f4e12d4fb55c142f6c`
+
+---
+
+
 ## [2.0.0] - 2025-11-05
 
 Release version 2.0.0
