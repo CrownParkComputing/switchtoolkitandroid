@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0] - 2025-11-05
+
+Release version 2.0.0
+
+**Download**: [SwitchToolkit-v2.0.0.apk](releases/SwitchToolkit-v2.0.0.apk)
+
+**SHA256**: `b8f3f8e248626f443562d41f3b393294023168d33f3699f4e12d4fb55c142f6c`
+
+---
+
+
 All notable changes to Switch Toolkit for Android will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
