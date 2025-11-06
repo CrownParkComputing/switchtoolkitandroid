@@ -1,0 +1,24 @@
+{
+  "version": "2.1",
+  "release_date": "2025-11-06",
+  "apk_file": "SwitchToolkit-v2.1.apk",
+  "sha256": "6cdc948e5073cb882416767fb334de1eeef0d380e28c373980d8131a209dd3f1",
+  "size_bytes": 21978655,
+  "min_android_version": "7.0",
+  "target_android_version": "14.0",
+  "features": [
+    "Library sorting tool to organize NSP files by Title ID",
+    "Automatic folder creation with game name and Title ID",
+    "Database lookup for title names when metadata extraction fails",
+    "Enhanced folder name sanitization",
+    "Better error handling for folder creation",
+    "Detailed logging for troubleshooting",
+    "Temp folder workaround for stubborn folders"
+  ],
+  "bug_fixes": [
+    "Fixed colon character in folder names causing errors",
+    "Fixed path validation and length checks",
+    "Improved handling of existing folders"
+  ],
+  "download_url": "https://github.com/CrownParkComputing/switchtoolkitandroid/releases/download/v2.1/SwitchToolkit-v2.1.apk"
+}
