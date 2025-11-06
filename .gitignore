@@ -27,6 +27,7 @@ Thumbs.db
 # Don't exclude our APK releases!
 !releases/*.apk
 !releases/*.json
+!downloads/**/*.apk
 
 # Keep documentation and images
 !*.md
