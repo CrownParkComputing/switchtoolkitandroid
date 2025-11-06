@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Toolkit - Nintendo Switch Game Management</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+        }
+        
+        .main-content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 20px 0;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .downloads {
+            margin: 40px 0;
+        }
+        
+        .downloads h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .download-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .download-btn::before {
+            content: "📱 ";
+        }
+        
+        .version-info {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: #e3f2fd;
+            border-radius: 10px;
+            color: #1976d2;
+            font-weight: bold;
+        }
+        
+        .screenshot-section {
+            margin: 40px 0;
+        }
+        
+        .screenshot-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            margin-top: 40px;
+        }
+        
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .github-link {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        
+        .github-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .main-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Switch Toolkit</h1>
+            <p>The Ultimate Nintendo Switch Game Management Tool</p>
+        </header>
+        
+        <div class="main-content">
+            <section class="about">
+                <h2>About Switch Toolkit</h2>
+                <p>Switch Toolkit is a powerful Android application designed for Nintendo Switch enthusiasts. Manage your game library, extract metadata, merge NSP files, and organize your collection with ease.</p>
+            </section>
+            
+            <section class="features">
+                <div class="feature">
+                    <h3>📦 NSP/XCI Management</h3>
+                    <p>Browse, merge, and manage your Nintendo Switch game packages with full metadata extraction.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>🔍 Game Database</h3>
+                    <p>Search and browse the complete Nintendo Switch game database with detailed information.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>📚 Library Organization</h3>
+                    <p>Automatically organize your game library by Title ID with smart folder creation.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>🎯 Ownership Tracking</h3>
+                    <p>Track which games you own with automatic detection from your library files.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>📂 Sort Library</h3>
+                    <p>Organize your NSP files into folders by game title and Title ID automatically.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>⚙️ LibHac Integration</h3>
+                    <p>Extract detailed metadata, analyze NCA files, and work with encrypted content.</p>
+                </div>
+            </section>
+            
+            <section class="downloads">
+                <h2>Download</h2>
+                <div class="version-info">
+                    Latest Version: 2.0.1 (November 2025)
+                </div>
+                <div class="download-buttons">
+                    <a href="downloads/android/SwitchToolkit-Release.apk" class="download-btn" download>
+                        Download for Android
+                    </a>
+                </div>
+                <p style="text-align: center; margin-top: 20px; color: #666;">
+                    <small>Requires Android 7.0 or higher</small>
+                </p>
+            </section>
+            
+            <section class="screenshot-section">
+                <h2>Features</h2>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 10px; background: #f8f9fa; margin: 5px 0; border-radius: 5px;">✅ Browse and search your game library</li>
+                    <li style="padding: 10px; background: #f8f9fa; margin: 5px 0; border-radius: 5px;">✅ Extract Title IDs and metadata from packages</li>
+                    <li style="padding: 10px; background: #f8f9fa; margin: 5px 0; border-radius: 5px;">✅ Merge multiple NSP files into one</li>
+                    <li style="padding: 10px; background: #f8f9fa; margin: 5px 0; border-radius: 5px;">✅ Organize library by Title ID automatically</li>
+                    <li style="padding: 10px; background: #f8f9fa; margin: 5px 0; border-radius: 5px;">✅ Sync owned titles from your library</li>
+                    <li style="padding: 10px; background: #f8f9fa; margin: 5px 0; border-radius: 5px;">✅ View game details, screenshots, and metadata</li>
+                    <li style="padding: 10px; background: #f8f9fa; margin: 5px 0; border-radius: 5px;">✅ Dark mode support</li>
+                </ul>
+            </section>
+            
+            <section style="margin-top: 40px; padding: 20px; background: #fff3cd; border-radius: 10px; border-left: 4px solid #ffc107;">
+                <h3 style="color: #856404; margin-bottom: 10px;">⚠️ Important Notes</h3>
+                <ul style="color: #856404; margin-left: 20px;">
+                    <li>This tool requires prod.keys and title.keys to extract metadata from encrypted content</li>
+                    <li>Place your keys in the app's designated keys folder</li>
+                    <li>Only use with legally obtained game files</li>
+                </ul>
+            </section>
+        </div>
+        
+        <footer>
+            <a href="https://github.com/CrownParkComputing/switchtoolkitandroid" class="github-link">
+                ⭐ View on GitHub
+            </a>
+            <p style="margin-top: 20px;">
+                &copy; 2025 Crown Park Computing. Open Source Software.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
