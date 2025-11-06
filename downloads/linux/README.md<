@@ -1,0 +1,139 @@
+# Linux Downloads
+
+## Development Status: Beta Testing
+
+### 🖥️ SwitchToolkit for Linux
+
+**Coming Soon**: Linux builds are currently in development and testing phase.
+
+## 📋 Target Specifications
+
+### Planned Requirements
+- **Distribution**: Ubuntu 20.04+ LTS, Debian 11+, Fedora 35+, and other major distributions
+- **Architecture**: x64 (Intel/AMD) and ARM64
+- **RAM**: 4GB minimum, 8GB recommended
+- **Storage**: 500MB for application, 20GB+ for game library
+- **Desktop Environment**: GNOME, KDE Plasma, XFCE, or other X11/Wayland environments
+
+### Package Formats
+- **AppImage**: Universal format for easy distribution
+- **Snap**: For Ubuntu ecosystem
+- **Flatpak**: Cross-distribution support
+- **Native Packages**: .deb for Debian/Ubuntu, .rpm for Red Hat/SUSE
+
+## 🚧 Current Development Status
+
+### In Development
+- ✅ **Core Library**: Switch file processing engine
+- ✅ **Emulator Integration**: Yuzu, Ryujinx support
+- 🔄 **Desktop Interface**: GTK/Qt frontend development
+- 🔄 **Package Building**: Automated build pipeline setup
+
+### Planned Features
+- **File Management**: Full Linux file system integration
+- **Desktop Integration**: Native file managers, file associations
+- **Keyboard Shortcuts**: Linux-standard accelerators
+- **Multiple Monitor Support**: Xrandr and Wayland support
+
+## 🧪 Beta Testing Program
+
+### Help Us Test
+We're looking for Linux users to help test SwitchToolkit before the public release:
+
+1. **Join our Discord**: [Linux Testing Channel](https://discord.gg/crownparkcomputing)
+2. **Fill out our survey**: [Beta Testing Survey](https://forms.google.com/beta-testing)
+3. **Follow development**: [GitHub Issues](https://github.com/CrownParkComputing/switchtoolkitandroid/labels/linux)
+
+### What We're Testing
+- **Package Installation**: Different package managers and formats
+- **Performance**: Large game libraries on various hardware
+- **Desktop Integration**: File managers, system menus, file associations
+- **Emulator Compatibility**: Yuzu, Ryujinx, and other Linux emulators
+
+## 📦 Early Access Builds
+
+### Current Status
+- **Alpha Builds**: Internal testing only
+- **Private Beta**: Limited public testing (coming Q1 2026)
+- **Public Beta**: Open testing (target Q2 2026)
+- **Stable Release**: Production-ready (target Q3 2026)
+
+## 🔧 Build from Source
+
+### Prerequisites
+```bash
+# Install .NET 8.0 SDK
+wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+sudo apt-get update
+sudo apt-get install -y dotnet-sdk-8.0
+
+# Install dependencies
+sudo apt-get install -y build-essential cmake git
+```
+
+### Build Instructions
+```bash
+# Clone repository
+git clone https://github.com/CrownParkComputing/switchtoolkitandroid.git
+cd switchtoolkitandroid
+
+# Build for Linux
+dotnet publish src/SwitchToolkit/SwitchToolkit.csproj \
+  -r linux-x64 \
+  -c Release \
+  -p:PublishSingleFile=true \
+  -p:SelfContained=true
+
+# Run the application
+./bin/Release/net8.0/linux-x64/SwitchToolkit
+```
+
+## 🐛 Known Issues
+
+### Current Limitations
+- **No GUI**: Command-line only interface in alpha builds
+- **File Permissions**: May require elevated permissions for some operations
+- **Emulator Integration**: Limited testing with Linux emulators
+- **Audio**: Missing audio feedback features
+
+### Planned Fixes
+- **GUI Development**: Complete desktop interface implementation
+- **Permission Handling**: Improve file access without root privileges
+- **Audio Support**: System notifications and sound effects
+- **DPI Scaling**: Support for high-DPI displays
+
+## 📊 Download Statistics
+
+<div align="center">
+
+![Development Progress](https://img.shields.io/badge/Progress-Development%20Phase-orange)
+![Target Release](https://img.shields.io/badge/Target-Q3%202006-blue)
+![Community Interest](https://img.shields.io/badge/Community-Open%20Beta-green)
+
+</div>
+
+## 🔗 Related Links
+
+- **Source Code**: [SwitchToolkit Linux Development](https://github.com/CrownParkComputing/switchtoolkitandroid/tree/linux-support)
+- **Development Blog**: [Progress Updates](https://crownparkcomputing.com/blog/linux-development)
+- **Community**: [Discord Linux Channel](https://discord.gg/crownparkcomputing)
+- **Issue Tracker**: [Linux Issues](https://github.com/CrownParkComputing/switchtoolkitandroid/issues?q=is%3Aissue+is%3Aopen+label%3Alinux)
+
+## ❓ FAQ
+
+### Q: When will Linux support be available?
+A: We target a public beta in Q2 2026 and stable release in Q3 2026. Progress depends on testing feedback and community support.
+
+### Q: Will it work on ARM devices like Raspberry Pi?
+A: Yes, we plan to support ARM64 architecture, including Raspberry Pi 4/5 and similar devices.
+
+### Q: Can I help with development?
+A: Absolutely! We're looking for contributors with Linux experience. Join our Discord or check our GitHub for contributing guidelines.
+
+### Q: What about Steam Deck support?
+A: Yes! Steam Deck support is planned for the Linux release, leveraging its Linux-based SteamOS.
+
+---
+
+**Follow the development**: [Twitter Updates](https://twitter.com/CrownParkComp) • [GitHub Discussions](https://github.com/CrownParkComputing/switchtoolkitandroid/discussions)
